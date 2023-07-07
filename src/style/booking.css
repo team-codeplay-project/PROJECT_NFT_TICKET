@@ -1,0 +1,230 @@
+/* 탭바 */
+.tab3-container {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+.tab3 {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007aff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+  transform: translateY(0);
+}
+
+.tab3:hover {
+  color: #ffffff;
+  background-color: #007aff;
+  transform: translateY(-2px);
+}
+
+.tab3.active {
+  color: #ffffff;
+  background-color: #007aff;
+  transform: translateY(-2px);
+}
+
+/* 예매카드 */
+
+.ticket-booking {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* 경기 */
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.section-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.ticket-row {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.ticket-list {
+  display: flex;
+  gap: 10px;
+}
+
+.ticket-item {
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ticket-item p {
+  margin: 0;
+}
+
+.ticket-item.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* 날짜 */
+.date-row {
+  margin-bottom: 40px;
+}
+
+.date-picker .custom-datepicker {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.date-picker .custom-datepicker:hover {
+  background-color: #d0d0d0;
+}
+
+.date-picker .datepicker-value {
+  margin: 0;
+}
+
+/* 구역좌석 */
+.seat-row {
+  margin-bottom: 100px;
+}
+
+.seat-select .dropdown-select {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seat-select .dropdown-select:hover {
+  background-color: #d0d0d0;
+}
+
+.book-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+}
+
+.dropdown-select .react-dropdown-select-content {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.dropdown-select .react-dropdown-select-dropdown {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.dropdown-select .react-dropdown-select-item {
+  padding: 10px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-select .react-dropdown-select-item:hover {
+  background-color: #d0d0d0;
+}
+
+.dropdown-select
+  .react-dropdown-select-item.react-dropdown-select-item-selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 375px) {
+  /* iPhone 13 styles */
+  .ticket-booking {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .ticket-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .ticket-item {
+    padding: 8px;
+  }
+
+  .ticket-item p {
+    font-size: 14px;
+  }
+
+  .date-picker .custom-datepicker {
+    padding: 8px;
+  }
+
+  .date-picker .datepicker-value {
+    font-size: 14px;
+  }
+
+  .seat-select .dropdown-select {
+    padding: 8px;
+  }
+
+  .book-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .dropdown-select .react-dropdown-select-item {
+    padding: 8px;
+  }
+}
